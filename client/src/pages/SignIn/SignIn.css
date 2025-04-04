@@ -1,0 +1,178 @@
+.signin-main-container {
+    background-color: #87ceea;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-container {
+    background-color: white;
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    min-height: 380px;
+    box-sizing: border-box;
+}
+
+.signin-container-title {
+    color: #5b5b5b;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.signin-input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.signin-inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: #5b5b5b;
+    font-size: 16px;
+}
+
+.signin-inputs label {
+    font-size: 14px;
+}
+
+.signin-inputs input {
+    color: #303134;
+    font-size: 14px;
+    border: 2px solid #ededed;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.signin-inputs input:focus {
+    border-color: #69c6eb;
+    border-width: 2px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(105, 198, 235, 0.6);
+}
+
+.signin-container button {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    background-color: #87ceea;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signin-container button:hover {
+    background-color: #69c6eb;
+}
+
+.signin-container a {
+    text-decoration: none;
+    color: #69c6eb;
+    font-size: 16px;
+}
+
+.signin-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #5b5b5b;
+    font-size: 14px;
+}
+
+.signin-checkbox input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    appearance: none;
+    border: 2px solid #5b5b5b;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    position: relative;
+}
+
+.signin-checkbox input[type="checkbox"]:checked {
+    background-color: #87ceea;
+    border-color: #87ceea;
+    background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"%3E%3Cpath fill="none" stroke="%23ffffff" stroke-width="2" d="M4 12l4 4 8-8"/%3E%3C/svg%3E');
+    background-size: 14px 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.error-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+    .signin-container {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .signin-container-title {
+        font-size: 26px;
+    }
+
+    .signin-inputs input {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .signin-container button {
+        font-size: 14px;
+    }
+
+    .signin-checkbox {
+        font-size: 14px;
+    }
+
+    .signin-container a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signin-container {
+        width: 90%;
+        max-width: 350px;
+        padding: 12px 22px;
+    }
+
+    .signin-container-title {
+        font-size: 26px;
+    }
+
+    .signin-inputs input {
+        font-size: 12px;
+        padding: 8px 4px;
+    }
+
+    .signin-container button {
+        font-size: 12px;
+    }
+
+    .signin-checkbox {
+        font-size: 12px;
+    }
+
+    .signin-container a {
+        font-size: 12px;
+    }
+}
